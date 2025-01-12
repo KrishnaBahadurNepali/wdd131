@@ -3,55 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynamic Web Fundamental</title>
-  <link rel="stylesheet" href="../base.css">
+  <title>Loading Spinner</title>
+  <!-- Center the loading container on the screen -->
+  <style>
+    #loading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f4f4f4; /* full background color*/
+      font-family: Arial, sans-serif;
+      color: #333; /* text color*/
+    }
+    
+    /* Spinner styles */
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3; /* Light gray border for circular object*/
+      border-top: 5px solid #3498db; /* Blue border for spinner */
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    
+    /* Spinner animation */
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="header-title">
-      <h1>WDD131: Dynamic Web Fundamental - Krishna Bdr. Nepali</h1>
-    </div>
-    <div class="header-links">
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      <a href="#">I-Learn</a>
-      <a href="#">Scripture</a>
-      <a href="#">Final Project</a>
-    </div>
-  </header>
+  <div id="loading-container">
+    <div class="spinner"></div>
+    <p>Loading, please wait...</p>
+  </div>
 
-  <!-- Main Section -->
-  <main>
-    <!-- About Me Section -->
-    <div class="about-me">
-      <h2>About Me</h2>
-      <p>Hello, I'm Krishna Bdr. Nepali. I am passionate about web development and programming.</p>
-      <div class="about-me-content">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg" alt="Nepal Flag" class="flag" />
-        <img src="images/your-photo.jpg" alt="Krishna Bdr. Nepali" class="profile-photo" />
-      </div>
-    </div>
-
-    <!-- Web Development Resources -->
-    <div class="resources">
-      <h2>Web Development Resources</h2>
-      <ul>
-        <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
-        <li><a href="https://kathmandupost.com" target="_blank">Kathmandu Post</a></li>
-        <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
-        <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
-        <li><a href="https://udemy.com" target="_blank">Udemy</a></li>
-        <li><a href="https://picsum.photos" target="_blank">Lorem Picsum</a></li>
-      </ul>
-    </div>
-  </main>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2024 Krishna Bdr. Nepali</p>
-    <p id="date-time"></p>
-  </footer>
-
-  <script src="script.js"></script>
+  <script>
+    delay
+    setTimeout(() => {
+    document.getElementById("loading-container").innerHTML = "<h1>Welcome to the Website!</h1>";
+    }, 3000); // 3 seconds delay
+  </script>
 </body>
 </html>

@@ -124,8 +124,8 @@ body {
   align-items: center;
 }
 .flag-cont {
-width: 120px;
-height: 110px;
+width: 150px;
+height: 130px;
 border-bottom:1rem;
 border-top: 1rem;
 overflow: hidden;
@@ -141,7 +141,7 @@ background-color: lightblue;
   align-items: start;
   animation: flutter 1.5s infinite ease-in-out;
 }
-  @keyframes flutter {
+ /** @keyframes flutter {
     0% {transform:translateX(0px)
       rotate(0deg);}
     25% {transform:translateX(3px)
@@ -153,12 +153,12 @@ background-color: lightblue;
     100% {transform:translateX(0px)
       rotate(0deg);}
   }
-
+*/
 
 .photo {
   width: 140px;
   height: 140px;
-  border-radius: 50%;
+  border-radius: 100%;
   align-items: flex-end;
 }
 .logo {
@@ -174,7 +174,7 @@ background-color: lightblue;
 .image-cont{
   position: relative;
   width: 100%;
-  height: 110px;
+  height: 106px;
   overflow: hidden;
   background-color: #f0f0f0;
   display: flex;
@@ -184,27 +184,27 @@ background-color: lightblue;
 position:absolute;
 width: auto;
 height:110px;
-animation: fly 1s linear infinite;
+animation: fly 5s linear infinite;
 }
 @keyframes fly {
-  0% {transform: translateX(100%);}
-  100% {transform: translateX(-100%);}
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(100%);}
 }
 /* delay for each image*/
-.image-cont img:nth-child(1){
-   animation: delay 0s;
+.image-cont, #image1:nth-child(1){
+   animation: delay 1s;
 }
-.image-cont img:nth-child(2){
-  animation: delay 2s;
+.image-cont image:nth-child(2){
+  animation: delay 5s;
 }
-.image-cont img:nth-child(3){
-  animation: delay 4s;
+.image-cont image:nth-child(3){
+  animation: delay 10s;
 }
-.image-cont img:nth-child(4){
-  animation: delay 6s;
+.image-cont image:nth-child(4){
+  animation: delay 15s;
 }
-.image-cont img:nth-child(5){
-  animation: delay 8s;
+.image-cont image:nth-child(5){
+  animation: delay 20s;
 }
 .about-me p {
   font-size: 1rem;

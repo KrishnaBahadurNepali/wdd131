@@ -1,9 +1,10 @@
 // Function to get and display the current date and time
   function displayCurrentDate() {
-  const now = new Date();
-  const dateString = now.toLocaleString(); // Localized date and time format
-  const dateElement = document.getElementById("current-date");
-  dateElement.textContent = "Current Date and Time:${dateString}"; 
+  //const now = new Date();
+  //const dateString = now.toLocaleString(); // Localized date and time format
+  //const dateElement = document.getElementById("current-date").innerHTML=date();
+  //dateElement.textContent = "Current Date and Time: ${dateElement}"; 
+  document.getElementById("current-date").innerHTML=date();
 }
 
 // Call the function when the page loads
