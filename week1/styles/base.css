@@ -184,32 +184,45 @@ background-color: lightblue;
 position:absolute;
 width: auto;
 height:110px;
-animation: fly 5s linear infinite;
+ /*animation: fly 5s linear infinite;*/
 }
 @keyframes fly {
   0% {transform: translateX(-100%);}
   100% {transform: translateX(100%);}
 }
 /* delay for each image*/
-.image-cont, #image1:nth-child(1){
-   animation: delay 1s;
+.image:nth-child(1){
+   animation-duration: 3s;
+   animation-delay: 10s;
+
 }
-.image-cont image:nth-child(2){
-  animation: delay 5s;
+.image:nth-child(2){
+  animation-duration: 3s;
+  animation-delay: 0s;
+
 }
-.image-cont image:nth-child(3){
-  animation: delay 10s;
+.image:nth-child(3){
+  animation-duration: 15s;
+  animation-delay: 0s;
+
 }
-.image-cont image:nth-child(4){
-  animation: delay 15s;
+.image:nth-child(4){
+  animation-duration: 20s;
+  animation-delay: 0s;
+
 }
-.image-cont image:nth-child(5){
-  animation: delay 20s;
+.image:nth-child(5){
+  animation-duration: 9s;
+  animation-delay: 0s;
+
 }
 .about-me p {
   font-size: 1rem;
 }
-
+.image {
+  position: absolute;
+  animation: fly 10s linear infinite;
+}
 /* Web Resources Section */
 .web-resources {
   background-color: #f9f9f9;
