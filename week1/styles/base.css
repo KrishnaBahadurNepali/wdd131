@@ -60,7 +60,7 @@ body {
 .header .navigation ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap:50px;
 }
 
 .header .navigation a{
@@ -198,22 +198,22 @@ height:110px;
 }
 .image:nth-child(2){
   animation-duration: 3s;
-  animation-delay: 3s;
+  animation-delay: 10s;
 
 }
 .image:nth-child(3){
   animation-duration: 3s;
-  animation-delay: 5s;
+  animation-delay: 20s;
 
 }
 .image:nth-child(4){
   animation-duration: 3s;
-  animation-delay: 7s;
+  animation-delay: 30s;
 
 }
 .image:nth-child(5){
   animation-duration: 3s;
-  animation-delay: 9s;
+  animation-delay: 40s;
 
 }
 .about-me p {
@@ -221,7 +221,7 @@ height:110px;
 }
 .image {
   position: absolute;
-  animation: fly 10s linear infinite;
+  animation: fly 5s linear infinite;
 }
 /* Web Resources Section */
 .web-resources {

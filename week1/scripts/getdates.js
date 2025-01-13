@@ -6,7 +6,7 @@
   //dateElement.textContent = "Current Date and Time: ${dateElement}"; 
   document.getElementById("current-date").innerHTML=date();
 }
-
+document.getElementById("para").style
 // Call the function when the page loads
 window.onload = displayCurrentDate;
 
