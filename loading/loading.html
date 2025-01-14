@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Spinner</title>
+  <!-- Center the loading container on the screen -->
+  <style>
+    #loading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f4f4f4; /* full background color*/
+      font-family: Arial, sans-serif;
+      color: #333; /* text color*/
+    }
+    
+    /* Spinner styles */
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3; /* Light gray border for circular object*/
+      border-top: 5px solid #3498db; /* Blue border for spinner */
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    
+    /* Spinner animation */
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to new page</h1>
+  <a href="../index.html">Back to home page</a>
+  <div id="loading-container">
+    <div class="spinner"></div>
+    <p>Loading, please wait...</p>
+  </div>
+
+  <script>
+    delay
+    setTimeout(() => {
+    document.getElementById("loading-container").innerHTML = "<h1>Welcome to the Website!</h1>";
+    }, 3000); // 3 seconds delay
+  </script>
+</body>
+</html>

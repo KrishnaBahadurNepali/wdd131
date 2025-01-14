@@ -3,55 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loading Spinner</title>
-  <!-- Center the loading container on the screen -->
-  <style>
-    #loading-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-color: #f4f4f4; /* full background color*/
-      font-family: Arial, sans-serif;
-      color: #333; /* text color*/
-    }
-    
-    /* Spinner styles */
-    .spinner {
-      width: 50px;
-      height: 50px;
-      border: 5px solid #f3f3f3; /* Light gray border for circular object*/
-      border-top: 5px solid #3498db; /* Blue border for spinner */
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin-bottom: 20px;
-    }
-    
-    /* Spinner animation */
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  </style>
+  <title>WDD131: Dynamic Web Fundamentals</title>
+  <link rel="stylesheet" href="styles/base.css"> <!-- External CSS file -->
 </head>
 <body>
-  <h1>Welcome to main page</h1>
-  <a href="week1/basic-layout.html">View Basic Layout</a>
-  <div id="loading-container">
-    <div class="spinner"></div>
-    <p>Loading, please wait...</p>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="title">
+      <h1>WDD131: Dynamic Web Fundamentals - Krishna Bdr. Nepali</h1>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
+        <li><a href="https://content.byui.edu/file/a055e079-72ea-4505-908d-984d4a7f1a5b/19/iLearn3tutorials.html">I-Learn</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/lib?lang=eng">Scripture</a></li>
+        <li><a href="#">Final Project</a></li>
+        <li><a href="loading/loading.html">New Page</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <div class="main-content">
+    <!-- About Me Section -->
+    <section class="about-me">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="flag-and-photo">
+          <div class="flag-cont"><a href="https://www.google.com/search?q=nepal+flags+gif&rlz" target="_blank"><img src="images/FlagOfNepal.gif" alt="Nepal Flag" id="flag"></a></div>
+          <div class="image-cont">
+            <img src="images/web1.jpeg" alt="Digital world" class="fly-in image1"> <!--This space shows both fly-in and image classes-->
+            <img src="images/web2.webp" alt="Web design" class="fly-in image2"> <!--fly-in =general class // image for specific class-->
+            <img src="images/web3.png" alt="All in one" class="fly-in image3">
+            <img src="images/web4.webp" alt="Digital markiting" class="fly-in image4">
+            <img src="images/web5.webp" alt="Networking in digital world" class="fly-in image5">
+          </div>
+          <a href="https://www.youtube.com/@krishsymphonic6175"><img src="images/krishna.jpg" alt="Krishna Bdr. Nepali" class="photo"></a>
+          <img src="images/logo.png" alt="logo" class="logo">
+        </div>
+        <p id="para">Hello, I’m Krishna Bdr. Nepali from Nepal. I am an electronics and communication engineer with a strong passion for web development and programming. 
+          Currently, I have been working at SELF-HELP NEPAL for 5 years.I am also deeply interested in website design, coding, and technology. In my free time,
+          I enjoy mountain hiking, cycling 🚴‍♂️, and playing musical instruments such as the flute, piano, and harmonica. Additionally, I design and sell drones. 
+          I love writing poems and parodies, and I enjoy inventing electronic devices and creating handicrafts from wheat straw and bamboo.
+          I am also an avid reader of novels and enjoy watching Book of Mormon story videos.Thank you for taking the time to learn more about me!
+        </p>
+      </div>
+    </section>
+
+    <!-- Web Development Resources Section -->
+    <section class="web-resources">
+      <h2>Web Development Resources</h2>
+      <ul>
+        <li><a href="https://dev.to/">Dev.to Community</a></li>
+        <li><a href="https://kathmandupost.com/">Kathmandu Post</a></li>
+        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+        <li><a href="https://www.udemy.com/">Udemy</a></li>
+        <li><a href="https://picsum.photos/">Lorem Picsum</a></li>
+      </ul>
+    </section>
   </div>
 
-  <script>
-    delay
-    setTimeout(() => {
-    document.getElementById("loading-container").innerHTML = "<h1>Welcome to the Website!</h1>";
-    }, 3000); // 3 seconds delay
-  </script>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2024; 🌹Krishna Nepali🌹Kathmandu, Nepal🙏</p>
+   <div><p id="date-display"></p> <!-- Date and Time will be displayed here --></div>
+  </footer>
+
+  <!-- External JavaScript file -->
+  <script src="scripts/getdates.js"></script>
+
 </body>
 </html>

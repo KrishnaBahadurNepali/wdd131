@@ -41,6 +41,8 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+
+  overflow-x: hidden; /*for overglow on x direction */
 }
 
 /* Header Section */
@@ -51,6 +53,9 @@ body {
   padding: 20px;
   background-color: #333;
   color: white;
+
+  align-items: center;
+
 }
 
 .header .title h1 {
@@ -60,9 +65,27 @@ body {
 .header .navigation ul {
   list-style: none;
   display: flex;
-  gap:50px;
+  gap:30px;
+  width: 100%;
+  max-width: 1200px; /* maximum width*/
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+.header .navigation li {
+  margin: 0 10px;
 }
 
+/*trying to swits the page in screen size*/
+@media(max-width:768px){
+ header ,main,footer nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+}
 .header .navigation a{
   text-decoration: none;
   color: white;
@@ -72,6 +95,9 @@ body {
   color: var(--nav-hover-link-color);
 }
 /* Main Content Section */
+main {
+  width: 100%;
+}
 .main-content {
   width: 80%;
   margin: 20px auto;
@@ -141,7 +167,7 @@ background-color: lightblue;
   align-items: start;
   animation: flutter 1.5s infinite ease-in-out;
 }
- /** @keyframes flutter {
+ /* @keyframes flutter {
     0% {transform:translateX(0px)
       rotate(0deg);}
     25% {transform:translateX(3px)
@@ -182,46 +208,51 @@ background-color: lightblue;
 }
 .image-cont img{
 position:absolute;
-width: auto;
+width: 200px;
 height:110px;
+animation-timing-function: ease-in-out;
+opacity: 0;
+
  /*animation: fly 5s linear infinite;*/
 }
-@keyframes fly {
-  0% {transform: translateX(-100%);}
-  100% {transform: translateX(100%);}
+@keyframes flyInOut {
+  0% {
+    transform: translateX(-100vw) rotate(0deg);
+    opacity: 0;}
+  10% {
+    transform: translateX(10vw) rotate(0deg); 
+    opacity: 1;}
+  40% {
+    transform: translateX(0) rotate(0deg) scale(1.5); /*scale is for zoom*/
+    opacity: 1;}
+  /* translate -100 to 10 t0 0 to 100 with 720 rotation*/
+  100% {
+    transform: translateX(100vw) rotate(720deg);  
+    opacity: 0;}
 }
-/* delay for each image*/
-.image:nth-child(1){
-   animation-duration: 3s;
-   animation-delay: 1s;
-
+.fly-in{
+  animation-name: flyInOut;
+  animation-duration: 10s; /*Total animation time*/
+  animation-iteration-count: 1; /*runs infinite again and agin*/
 }
-.image:nth-child(2){
-  animation-duration: 3s;
-  animation-delay: 10s;
-
+.image1 {
+  animation-delay: 0s;
 }
-.image:nth-child(3){
-  animation-duration: 3s;
-  animation-delay: 20s;
-
+.image2 {
+ animation-delay: 7s;
 }
-.image:nth-child(4){
-  animation-duration: 3s;
-  animation-delay: 30s;
-
+.image3 {
+  animation-delay: 14s;
 }
-.image:nth-child(5){
-  animation-duration: 3s;
-  animation-delay: 40s;
-
+.image4 {
+  animation-delay: 21s;
 }
-.about-me p {
-  font-size: 1rem;
+.image5 {
+  animation-delay: 28s;
 }
-.image {
-  position: absolute;
-  animation: fly 5s linear infinite;
+.about-me #para {
+  font-size: 14px;
+  text-align: justify;
 }
 /* Web Resources Section */
 .web-resources {
