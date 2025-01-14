@@ -149,6 +149,11 @@ main {
   gap: 10px;
   align-items: center;
 }
+.flag-and-photo h4{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
+  position: inherit;
+}
 .flag-cont {
 width: 150px;
 height: 130px;
