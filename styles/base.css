@@ -242,6 +242,7 @@ opacity: 0;
   color:#fcfcfc;
   font-size: 14px;
   text-align:left;
+  hyphens: auto;
 }
 /* Web Resources Section */
 .web-resources {
