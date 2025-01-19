@@ -238,8 +238,10 @@ opacity: 0;
   animation-delay: 28s;
 }
 .about-me #para {
+  font-family: Arial, Helvetica, sans-serif;
+  color:#fcfcfc;
   font-size: 14px;
-  text-align: justify;
+  text-align:center;
 }
 /* Web Resources Section */
 .web-resources {
@@ -265,11 +267,6 @@ opacity: 0;
 
 .web-resources li {
   margin-bottom: 10px;
-  
-}
-#para{
-  font-family: Arial, Helvetica, sans-serif;
-  color:#fcfcfc
 }
 .web-resources a {
   text-decoration: none;
