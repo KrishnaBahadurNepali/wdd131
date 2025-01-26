@@ -1,0 +1,18 @@
+/* temples-large.css - Styles for larger screens */
+@media (min-width: 769px) {
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header nav ul li {
+        margin: 0 20px;
+    }
+    .hamburger {
+        display: none;
+    }
+}
