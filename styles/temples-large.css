@@ -2,7 +2,7 @@
 @media (min-width: 769px) {
     main {
         max-width: 1000px;
-        margin: 0 auto;
+        margin: 0 100px;
     }
 
     .gallery {
