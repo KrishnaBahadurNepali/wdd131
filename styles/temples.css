@@ -23,6 +23,9 @@ header nav ul li {
     margin: 0 10px;
 }
 
+header nav ul li :hover {
+    color:aqua;
+}
 header nav ul li a {
     color: white;
     text-decoration: none;
