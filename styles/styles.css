@@ -6,7 +6,7 @@
   --backgroundColor: #f4f4f4;
   --colorPrimary600: #333;
   --colorPrimary800: #44ac7b;
-  --fontFamily: "Dosis", sans-serif;
+  --fontFamily: "Dosis", "sans-serif","Roboto";
   --fontSizeSm: 1.2rem;
   --fontSizeMd: 1.6rem;
   --fontSizeLg: 2.1rem;
@@ -20,7 +20,7 @@
     box-sizing: var(--boxsize);
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--fontFamily);
     line-height: 1.6;
     margin: 0;
     padding: 0;
