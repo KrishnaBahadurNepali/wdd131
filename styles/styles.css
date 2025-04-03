@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+:root {
+  /* generic this is for reuses of repetition*/
+  --boxsize:border-box;
+  --backgroundColor: #f4f4f4;
+  --colorPrimary600: #333;
+  --colorPrimary800: #44ac7b;
+  --fontFamily: "Dosis", sans-serif;
+  --fontSizeSm: 1.2rem;
+  --fontSizeMd: 1.6rem;
+  --fontSizeLg: 2.1rem;
+  --margin:0;
+  --padding: 0;
+  --width:100%;
+}
+*{
+    margin: var(--margin);
+    padding: var(--padding);
+    box-sizing: var(--boxsize);
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:var(--backgroundColor);
+}
+header {
+    text-align: center;
+    background-color: var(--colorPrimary600);
+    color: var(--backgroundColor); 
+}
+h1 a {
+    color: var(--backgroundColor);
+    text-decoration: none;
+    transition:color 0.3s;
+}
+h1 a:hover{
+    color:var(--colorPrimary800);
+}
+picture img {
+    width:var(--width);
+    height: 400px;
+    display: block;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: top;
+}
+main {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    padding: 1.5rem;
+}
+section {
+    margin-bottom: 2rem;
+    background-color:var(--backgroundColor);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align:justify;
+    width:var(--width);
+}
+.icon {
+    width: 200px;
+    height: 200px;
+    float: right;
+    display: flex;
+    justify-content: flex-end;   
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: var(--backgroundColor);
+}
+@media (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        
+    }
+    .icon {
+        width: 0px;
+        height: 0px;
+    }
+    #weather h2::after{
+        content:"⛅";
+    }
+    /* THE NEPAL ICON I DIDNT FIND SO I DID USE THIS LINK FROM ONLINE */
+    #about h2::before {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 25px;
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg');
+        background-size: cover;
+        margin-right:5px;
+        vertical-align:text-top;
+    }
+    header, footer {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}
