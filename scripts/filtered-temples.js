@@ -49,6 +49,76 @@ const temples = [
       dedicated: "1983, December, 2",
       area: 116642,
       imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    },
+    {
+      templeName: "Salt Lake Temple",
+      location: "Salt Lake City, Utah, USA",
+      dedicated: "1893, April, 6",
+      area: 253015,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
+    },
+    {
+      templeName: "Rome Italy Temple",
+      location: "Rome, Italy",
+      dedicated: "2019, March, 10",
+      area: 41010,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
+    },
+    {
+      templeName: "Tokyo Japan Temple",
+      location: "Tokyo, Japan",
+      dedicated: "1980, October, 27",
+      area: 52590,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340-main.jpg"
+    },
+    {
+      templeName: "Paris France Temple",
+      location: "Le Chesnay, France",
+      dedicated: "2017, May, 21",
+      area: 44175,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
+    },
+    {
+      templeName: "Accra Ghana Temple",
+      location: "Accra, Ghana",
+      dedicated: "2004, January, 11",
+      area: 17500,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg"
+    },
+    {
+      templeName: "Mexico City Mexico Temple",
+      location: "Mexico City, Mexico",
+      dedicated: "1983, December, 2",
+      area: 116642,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/mexico-city-mexico-temple/mexico-city-mexico-temple-4060-main.jpg"
+    },
+    {
+      templeName: "Johannesburg South Africa Temple",
+      location: "Johannesburg, South Africa",
+      dedicated: "1985, August, 24",
+      area: 19580,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/johannesburg-south-africa-temple/johannesburg-south-africa-temple-22475-main.jpg"
+    },
+    {
+      templeName: "Laie Hawaii Temple",
+      location: "Laie, Hawaii, USA",
+      dedicated: "1919, November, 27",
+      area: 42300,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-7370-main.jpg"
+    },
+    {
+      templeName: "Toronto Ontario Temple",
+      location: "Toronto, Ontario, Canada",
+      dedicated: "1990, August, 25",
+      area: 57000,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/toronto-ontario-temple/toronto-ontario-temple-57469-main.jpg"
+    },
+    {
+      templeName: "Aba Nigeria Temple",
+      location: "Aba, Nigeria",
+      dedicated: "2005, August, 7",
+      area: 11500,
+      imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-5087-main.jpg"
     }
     // Add more if needed
   ];
