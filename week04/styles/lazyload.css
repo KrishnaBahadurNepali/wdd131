@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font: 100;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main picture img{
+    height: 400px;
+    padding: 10px;
+    margin: auto;
+    background-color: black;
+    animation: fade 3s;
+}
