@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Filtered Temples</title>
-  <script defer src="scripts/filtered-temples.js"></script>
-  <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Krishna Bahadur Nepali">
+    <meta name="keywords" content="WDD 131,web design,HTML,CSS,responsiv design,beginner course">
+    <meta name="description" content="WDD 131 introduces the basics of web design, teaching HTML, CSS, and how to create user-friendly, responsive websites and filtered images for image gallery.">
+    <title>Krishna Bahadur Nepali || Filtered Temples</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Dosis">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Embed the Google Font link directly -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <script defer src="scripts/filtered-temples.js"></script>
+    
 </head>
 <body>
   <header>
-    <h1>Temple Gallery</h1>
+    <h1>Krishna Bahadur Nepali || Filtered Temples</h1>
     <nav>
-      <button onclick="filterTemples('all')">Home</button>
+      <!--<button onclick="filterTemples('all')">Home</button>  // this can be done as well
       <button onclick="filterTemples('old')">Old</button>
       <button onclick="filterTemples('new')">New</button>
       <button onclick="filterTemples('large')">Large</button>
-      <button onclick="filterTemples('small')">Small</button>
+      <button onclick="filterTemples('small')">Small</button>-->
+      <a href="#" onclick="filterTemples('all')">Home</a>
+      <a href="#" onclick="filterTemples('old')">Old</a>
+      <a href="#" onclick="filterTemples('new')">New</a>
+      <a href="#" onclick="filterTemples('large')">Large</a>
+      <a href="#" onclick="filterTemples('small')">Small</a>
     </nav>
   </header>
-
   <main>
+    <h2>Explore LDS Temples</h2>
     <!--Here Java scripts will dynamically  add temple card  to inject each temple card while displayig-->
     <!--some templete card would be here while debugging if we don't use content.innerHTML='' in js image will multiply, -->
     <div id="temple-cards" class="temple-grid"></div> <!--id is for js and class is for css file-->

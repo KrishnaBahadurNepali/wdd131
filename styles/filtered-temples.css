@@ -1,21 +1,41 @@
+:root {
+  /* generic this is for reuses of repetition*/
+  --boxsize:border-box;
+  --backgroundColor: #f4f4f4;
+  --colorPrimary600: #333;
+  --colorPrimary800: #44ac7b;
+  --fontSizeSm: 1.2rem;
+  --fontSizeMd: 1.6rem;
+  --fontSizeLg: 2.1rem;
+  --margin:0;
+  --padding: 1rem;
+  --width:100%;
+  --fontstyle:"Dosis";
+} 
 body {
-    font-family: Arial, sans-serif;
+    font-family:var(--fontstyle);
     margin: 0;
     padding: 0;
   }
-  
+  h2{
+    text-align: center;
+    text-decoration:none;
+  }
   header, footer {
     background-color: #2e3d49;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding:var(--padding);
   }
   
   nav {
-    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /*margin-top: 1rem;*/
   }
   
-  nav button {
+  /*nav button {
     margin: 0.3rem;
     padding: 0.5rem 1rem;
     background-color: #4a6572;
@@ -23,7 +43,7 @@ body {
     color: white;
     border-radius: 6px;
     cursor: pointer;
-  }
+  }*/
   
   nav button:hover {
     background-color: #88a4b8;
@@ -34,11 +54,38 @@ body {
   }
   
   .temple-grid {
-    display: grid;
+    display:flex;
+    flex-wrap:wrap;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+    /*grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));*/
   }
   
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem; /*0.5 rem for top and bottom and 1rem for left and right*/
+    background-color: #4a6572;
+    border-radius: 6px;
+    transition: background-color 0.3s ease; /*apply background color for 0.3 second and ease*/
+  }
+  
+  nav a:hover {
+    background-color: #88a4b8;
+  }
+  
+  /*.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }*/
+  
+  .card:hover {
+    transform: translateY(-5px); /* this is for Y-axis movement -5px negative axis applies to the images .card class*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
   .card {
     border: 1px solid #ccc;
     border-radius: 10px;
