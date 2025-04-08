@@ -100,7 +100,7 @@ const temples = [
   document.getElementById('year').textContent = new Date().getFullYear();
   document.getElementById('lastModified').textContent = document.lastModified;
   
-
+//separate function for hamburger menu
   window.onload = function() {
    
     // Hamburger menu toggle for mobile view

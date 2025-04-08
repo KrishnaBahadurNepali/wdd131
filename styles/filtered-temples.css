@@ -132,6 +132,9 @@ body {
         background: none;
         border: none;
         color: white;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
     }
 
     #nav-menu {
@@ -146,11 +149,5 @@ body {
     header nav a {
         margin: 10px 0;
     }
-
-    .hamburger {
-      position: absolute;
-      top:2rem;
-      right:1rem;
-    }  
   }
   
