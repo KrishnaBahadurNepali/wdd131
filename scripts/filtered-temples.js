@@ -99,3 +99,15 @@ const temples = [
   // Footer dynamic date and time
   document.getElementById('year').textContent = new Date().getFullYear();
   document.getElementById('lastModified').textContent = document.lastModified;
+  
+
+  window.onload = function() {
+   
+    // Hamburger menu toggle for mobile view
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
+};
