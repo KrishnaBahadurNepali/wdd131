@@ -22,26 +22,36 @@
   </header>
   <main>
     <form action="review.html" method="get">
+      <label for="productName">Product Name</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
 
-        <label for="installDate">Date of Installation</label>
-        <input type="date" id="installDate" name="installDate" required>
-        
-        <fieldset>
+      <fieldset class="rating-group">
+        <legend>Overall Rating</legend>
+        <label><input type="radio" name="rating" value="1" required> ☆</label>
+        <label><input type="radio" name="rating" value="2"> ☆☆</label>
+        <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+        <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+      </fieldset>
+
+      <label for="installDate">Date of Installation</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <fieldset>
         <legend class="text">Which features did you find useful in the Product? (Check all that apply)</legend>
         <label><input type="checkbox" name="features" value="easy_install"> Easy to Install</label>
         <label><input type="checkbox" name="features" value="durable"> Durable</label>
         <label><input type="checkbox" name="features" value="energy_efficient"> Energy Efficient</label>
         <label><input type="checkbox" name="features" value="compact"> Compact Design</label>
-        </fieldset>
-        
-        <label for="review">Written Review</label>
-        <textarea id="review" name="review" rows="4"></textarea>
-        
-        <label for="userName">User Name (optional)</label>
-        <input type="text" id="userName" name="userName">
-        
-        <input type="submit" value="submit">
-    </form>   
+      </fieldset>
+      <label for="review">Written Review</label>
+      <textarea id="review" name="review" rows="4"></textarea>
+      <label for="userName">User Name (optional)</label>
+      <input type="text" id="userName" name="userName">
+      <input type="submit" value="submit">
+    </form>
   </main>
   <footer>
     <p>&copy;<span id="year"></span>🌷🌹Krishna Bhandar Nepali | Student at BYU-Idaho 🌹🌷| Last Modified: <span id="lastModified"></span></p>
