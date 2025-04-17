@@ -1,0 +1,138 @@
+/* Base Styles - Mobile First */
+
+/* Apply general styles */
+:root {
+    /* generic this is for reuses of repetition  this is just for showing the lerned model from course*/
+    --boxsize:border-box;
+    --backgroundColor1: #f5f5f5;
+    --backgroundColor2:#004466;
+    --colorPrimary800: #44ac7b;
+    --margin:0;
+    --padding: 1rem;
+    --width:100%;
+    --fontstyle:"Dosis";
+  } 
+body {
+    font-family: Arial, sans-serif,var(--fontstyle);
+    background-color:var(--backgroundColor1);
+    margin:var(--margin);
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color:var(--backgroundColor2);
+    color: white;
+    text-align: center;
+    padding:var(--padding);
+  }
+  
+  main {
+    max-width: 100%; /* Full width for mobile */
+    margin: 1em auto;
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label, form legend {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+  }
+  
+  select, input[type="text"], input[type="date"], textarea {
+    width:var(--width);
+    padding: 0.5em;
+    margin-top: 0.5em;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    margin-top: 2em;
+    padding: 0.75em;
+    background-color: #004466;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #006699;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+fieldset legend.text{
+    padding-top: 1rem;
+  }
+  fieldset label {
+    display: block;
+    margin-top: 0.5em;
+    
+  }
+  
+  /* Horizontal Rating Stars */
+  fieldset label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Media Queries for Larger Screens */
+  
+  /* For screens wider than 600px (Tablets and above) */
+  @media (max-width: 600px) {
+    main {
+      max-width: 600px; /* Limit width to 600px for tablets and desktops */
+      padding: 2em;
+    }
+    fieldset.rating-group{
+        display:flex;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+    h1{
+        font-size:20px;
+    }
+  }
+  
+  /* For screens wider than 900px (Desktop and large tablets) */
+  @media (min-width: 900px) {
+    main {
+      max-width: 800px; /* Further widen for desktops */
+      margin: 2em auto; /* Centering */
+    }
+    
+    header, footer {
+      padding: 1.5em; /* More padding for desktop */
+    }
+  
+    form label, form legend {
+      font-size: 1.1em; /* Slightly bigger labels for desktop */
+    }
+    
+    select, input[type="text"], input[type="date"], textarea {
+      font-size: 1.1em; /* Larger font for larger screens */
+    }
+  
+    input[type="submit"] {
+      padding: 1em; /* Larger submit button for desktop */
+      font-size: 1.2em; /* Larger text for desktop */
+    }
+    fieldset.rating-group{
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    fieldset legend.text{
+        padding: 1rem;
+      }
+
+  }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--These meta tags are just to conform there is aurther, content and description and added some google link-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Krishna Bahadur Nepali">
+  <meta name="keywords" content="WDD 131,web design,HTML,CSS,responsiv design,product review form for the beginner course">
+  <meta name="description" content="WDD 131 introduces the basics of web design, teaching HTML, CSS, and how to create user-friendly, responsive websites and filtered images for image gallery.">
+  <title>Product Review Form</title>
+  <script defer src="scripts/form.js"></script>
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Dosis">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Embed the Google Font link directly -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+  <main>
+    <form action="review.html" method="get">
+      <label for="productName">Product Name</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      <fieldset class="rating-group">
+        <legend>Overall Rating</legend>
+        <label><input type="radio" name="rating" value="1" required> ☆</label>
+        <label><input type="radio" name="rating" value="2"> ☆☆</label>
+        <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+        <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+      </fieldset>
+
+      <label for="installDate">Date of Installation</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <fieldset>
+        <legend class="text">Which features did you find useful in the Product? (Check all that apply)</legend>
+        <label><input type="checkbox" name="features" value="easy_install"> Easy to Install</label>
+        <label><input type="checkbox" name="features" value="durable"> Durable</label>
+        <label><input type="checkbox" name="features" value="energy_efficient"> Energy Efficient</label>
+        <label><input type="checkbox" name="features" value="compact"> Compact Design</label>
+      </fieldset>
+      <label for="review">Written Review</label>
+      <textarea id="review" name="review" rows="4"></textarea>
+      <label for="userName">User Name (optional)</label>
+      <input type="text" id="userName" name="userName">
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+  <footer>
+    <p>&copy;<span id="year"></span>🌷🌹Krishna Bhandar Nepali | Student at BYU-Idaho 🌹🌷| Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
