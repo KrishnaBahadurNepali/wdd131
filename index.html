@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Self Help Nepal</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>SELF HELP NEPAL</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="donate.html">Donate</a>
+      <a href="reference.html">References</a>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <img src="images/hero.webp" alt="Self Help Nepal Children" loading="lazy" />
+        <div class="hero-text">
+          <h2>Welcome to Self Help Nepal</h2>
+          <p>Caring for Orphaned Children with Love, Support, and Hope.</p>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="feature-card">
+          <img src="images/education.jpeg" alt="Education Support" loading="lazy" />
+          <h3>Education</h3>
+          <p>We provide free schooling, books, and learning tools for every child.</p>
+        </div>
+        <div class="feature-card">
+          <img src="images/healthcare.webp" alt="Healthcare Services" loading="lazy" />
+          <h3>Healthcare</h3>
+          <p>Regular checkups, nutrition, and emotional support for better health.</p>
+        </div>
+        <div class="feature-card">
+          <img src="images/shelter.webp" alt="Safe Shelter" loading="lazy" />
+          <h3>Shelter</h3>
+          <p>Warm beds, safe spaces, and loving caregivers to call home.</p>
+        </div>
+        <div class="feature-card">
+          <img src="images/sports.webp" alt="SHN Sports Activities" loading="lazy" />
+          <h3>Sports</h3>
+          <p>Cycle riding, hiking, football, volleyball and basketball.</p>
+        </div>
+      </section>
+
+      <section class="about">
+        <h3>About SHN</h3>
+        <p>Self Help Nepal supports orphaned children through education, shelter, and love.</p>
+      </section>
+
+      <section class="programs">
+        <h3>Our Programs</h3>
+        <div class="program-buttons">
+          <button>Education</button>
+          <button>Healthcare</button>
+          <button>Shelter</button>
+        </div>
+      </section>
+
+      <section class="events">
+        <h3>Upcoming Events</h3>
+        <div class="event-card">
+          <h4>Tihar Celebration</h4>
+          <button onclick="location.href='programs.html#tihar'">VIEW DETAILS</button>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <h3>Contact Us</h3>
+        <form class="contact-form">
+          <label for="cname">Your Name:</label>
+          <input type="text" id="cname" name="cname" required />
+
+          <label for="cemail">Your Email:</label>
+          <input type="email" id="cemail" name="cemail" required />
+
+          <label for="cmessage">Message:</label>
+          <textarea id="cmessage" name="cmessage" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <p><strong>Address:</strong> S.H.N. A house of hope, Kathmandu, Nepal</p>
+          <p><strong>Phone:</strong> +977-9800000000</p>
+          <p><strong>Email:</strong> info@selfhelpnepal.org</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© SHN 2025 | <a href="reference.html">References</a></p>
+    <p id="datetime"></p>
+  </footer>
+
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>

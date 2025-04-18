@@ -1,0 +1,124 @@
+/* === Header & Nav (Shared) === */
+header {
+    background-color: #004d66;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* === Programs Page === */
+  .events {
+    padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .events h2 {
+    font-size: 2rem;
+    color: #004d66;
+    margin-bottom: 2rem;
+  }
+  
+  .event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .event-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1rem;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .event-card h3 {
+    font-size: 1.4rem;
+    color: #1d72b8;
+    margin: 0.5rem 0;
+  }
+  
+  .event-card p {
+    color: #444;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* === Footer === */
+  footer {
+    background-color: #004d66;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+  
+  /* === Responsive Design === */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    nav {
+      justify-content: center;
+    }
+  
+    nav a {
+      margin: 0.3rem 0.5rem;
+    }
+  
+    .event-card {
+      width: 90%;
+    }
+  
+    .event-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
